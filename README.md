@@ -1,0 +1,1 @@
+Download [Vadym Zakovinko CV](https://github.com/Quard/CV/releases/latest/download/Vadym_Zakovinko.pdf)

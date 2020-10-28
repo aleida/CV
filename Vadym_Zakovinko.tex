@@ -1,0 +1,215 @@
+\documentclass[11pt,a4paper,oneside]{moderncv}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[T2A]{fontenc}
+%\usepackage[unicode]{hyperref}
+\usepackage{vmargin}
+
+\setmarg{15mm}{10mm}{175mm}{257mm}
+\moderncvtheme[blue]{oldstyle}
+
+\firstname{Vadym}
+\lastname{Zakovinko}
+\address{}{Kyiv, Ukraine}
+\mobile{+380 (66) 731-7776}
+\email{vadym@zakovinko.com}
+\homepage{zakovinko.com}
+\social[github]{Quard}
+\social[skype]{quardz}
+\social[linkedin]{vadymzakovinko}
+\photo[64pt][0pt]{photo}
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\begin{document}
+    \maketitle
+
+    \section{Skills}
+        \subsection{Development}
+            \cvline
+                {Language}{Python, Go, JavaScript}
+            \cvline
+                {Database}{PostgreSQL, Redis, MongoDB, Bolt}
+            \cvline
+                {Versions control system}{Git, Mercurial}
+            \cvline
+                {Frameworks and tools}{Django, AsyncIO, AioHttp, Flask, Google Protobuf, gRPC, Django Rest Framework, Pylons, SQLAlchemy, Celery, ElasticSearch, Apache Beam, Pytest, UnitTest}
+            \cvline
+                {Deployment/Platform}{Docker, Kubernetes, AWS Lambda, Google Could Platform, Terraform, Circle CI, GitHub Actions}
+            \cvline
+                {Web-frontend}{HTML, CSS, SASS, Less, jQuery, AngularJS, Backbone, React}
+
+        \subsection{Computer}
+            \cvline
+                {Operation Systems}{Mac OS X, Linux}
+
+        %% \subsection{Social}
+        %%     \cvline
+        %%         {}{eager to learn new things, responsibility}
+
+
+    \section{Publications}
+        \cvlistitem
+            {\href{https://djangostars.com/blog/my-story-with-golang/}{My Story with Go, Python, and Benchmarks}}
+        \cvlistitem
+            {\href{https://medium.com/free-code-camp/django-performance-optimization-looking-for-the-bottlenecks-8583789e341b}{Django Performance Optimization: The Search for Bottlenecks}}
+        \cvlistitem
+            {\href{https://codeburst.io/how-i-use-python-debugger-to-fix-code-279f11f75866}{How I Use Python Debugger to Fix Code}}
+        \cvlistitem
+            {\href{https://codeburst.io/the-celery-python-guide-basics-examples-and-useful-tips-d8da1fcfaea3}{The Celery Python Guide: Basics, Examples and Useful Tips}}
+        \cvlistitem
+            {\href{https://djangostars.com/blog/how-to-build-your-own-blockchain-for-a-financial-product/}{How to build your own blockchain for a financial product}}
+        \cvlistitem
+            {\href{https://medium.com/free-code-camp/django-classifier-or-what-have-i-done-4a8164358c09}{Django-Classifier or What Have I Done?}}
+
+
+    \section{Professional experience}
+
+        \cventry
+            {2019.12~---~for now}
+            {team lead/architect}
+            {\href{http://vetintegrations.com/}{VIS}}
+            {}{}
+            {
+                \begin{itemize}
+                  \item analysis and processing business requirements
+                  \item choice of proper tools and technologies
+                  \item design of system
+                  \item using cloud solutions available in Google Cloud Platform and deploy application using Kubernetes cluster (GKE)
+                  \item involment into working closelly with lower on GDPR and CCPA requirements for project
+                  \item building processes and team
+                \end{itemize}
+            }
+
+        \cventry
+            {2016.03~---~2019.10}
+            {solution architect}
+            {\href{http://djangostars.com}{Django Stars}}
+            {}{}
+            {
+              main responsibilities:
+              \begin{itemize}
+                \item create architecture for new projects
+                \item consulting teams with a technical question
+                \item support project-teams in negotiation with a customer
+                \item working on pre-development project phases
+                \item investigation of new technologies
+                \item build process of hiring new employees
+                \item working on education course for QA automation for manual QA
+              \end{itemize}
+            }
+
+        \cventry
+            {2015.03~---~2016.03}
+            {team lead/python developer}
+            {\href{http://djangostars.com}{Django Stars}}
+            {}{}
+            {
+              outsource company based in Ukraine:\newline
+              MoneyPark is Switzerland's first independent provider for personalized financial advice that's worth its money. Company support and consult clients on mortgages, retirement, insurance and investment products. \url{http://moneypark.ch/}\newline
+              main responsibilities:
+              \begin{itemize}
+                \item optimization for rates calculation
+                \item create subsystem for fully customizable discounts
+                \item migrate project from python 2 to python 3
+                \item constantly update version of using framework
+              \end{itemize}
+            }
+
+        \cventry
+            {2013.10~---~2015.03}
+            {python developer}
+            {\href{http://djangostars.com}{Django Stars}}
+            {}{}
+            {
+              outsource company based in Ukraine:\newline
+              MoneyPark ~--~ Platform for select best offer of either mortgage or insurance or investments. With support of different analyzers, documents storage, discounts and etc. \url{http://moneypark.ch/}
+            }
+
+        \cventry
+            {2012.12~---~2013.10}
+            {python developer}
+            {\href{https://wargaming.com/}{Wargaming (Persha Studia)}}
+            {}{}
+            {
+              Working on public API for ``World of Tanks'' and ``World of Warplanes''
+            }
+
+        \cventry
+            {2011.05~--–~2012.12}
+            {python developer}
+            {\href{https://prom.ua/}{Prom.UA}}
+            {}{}
+            {
+              Platform for build own online shop. Provides a cheap way to create online store for your business with support of cart, discounts, personal design. Based in Ukraine and has affiliates in more then 10 countries. \url{http://prom.ua/} \url{http://tiu.ru/}\newline
+              main responsibilities:
+              \begin{itemize}
+                \item support team, working on urgent fixes for production
+                \item discount subsystem for products
+                \item creating different ranks for promotion actions
+              \end{itemize}
+            }
+
+        \cventry
+            {2011.04~--–~2012.06}
+            {lead python developer}
+            {ActiveGift}
+            {}{}
+            {
+              Web-site where you can create chat room and invite your friends from facebook for discussing gift for someone. Gifts can be added by search in amazon store or by url to site or just as text description. People in chat room can vote for gifts and discuss each one.
+            }
+
+        \cventry
+            {2010.06~--–~2012.06}
+            {python/django developer}
+            {Bitpapaya}
+            {}{}
+            {
+                Development of eCommerce projects, booking sites, web projects optimization and deployment. \url{http://bitpapaya.com/}
+            }
+
+        \cventry
+            {2010.09~--–~2011.06}
+            {python/django developer}
+            {42 Coffee Cups}
+            {}{}
+            {
+                Outsource development of online stores, booking sites and services. \url{http://42coffeecups.com/}
+            }
+
+        \cventry
+            {2009.04~--–~2010.08}
+            {python/django developer}
+            {Avtocentre}
+            {}{}
+            {
+                One of biggest catalog used vehicles in Ukraine. \url{http://avtobazar.ua/}
+            }
+
+        \cventry
+            {2007.11~--–~2009.03}
+            {php/adobe flex developer}
+            {Finport Technologiens, Inc.}
+            {}{}
+            {
+                Development of web-oriented patent search internal systems with PHP, Adobe Flex and WebOrb.
+            }
+
+    \section{Education}
+        \cventry
+            {2008}
+            {Masters degree}
+            {Software Development of Automated systems}
+            {Institute of Artificial Intelligence Problems, Donetsk, Ukraine}
+            {}{}
+
+        \cventry
+            {2005}
+            {Specialist degree}
+            {Software Development of Automated systems}
+            {College of Kyiv National Economic University, Kiev, Ukraine}
+            {}{}
+
+\end{document}
