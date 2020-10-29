@@ -1,6 +1,9 @@
 name: Render and Release
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -12,7 +15,7 @@ jobs:
       - name: Install LaTeX with ModernCV
         run: sudo apt-get install texlive-latex-extra
       - name: Render PDF
-        run: pdflatex Vadym_Zakovinko.tex
+        run: pdflatex cv.tex
       - name: Get date
         id: date
         run: echo "::set-output name=date::$(date +'%Y%m%d%H%M')"
@@ -32,6 +35,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./Vadym_Zakovinko.pdf
-          asset_name: Vadym_Zakovinko.pdf
+          asset_path: ./cv.pdf
+          asset_name: ${{ secrets.NAME }}.pdf
           asset_content_type: application/pdf
