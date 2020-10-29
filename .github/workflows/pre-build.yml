@@ -1,0 +1,20 @@
+name: Render and Release
+
+on: [pull_request]
+
+jobs:
+  prebuild:
+    name: pre-build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install LaTeX with ModernCV
+        run: sudo apt-get install texlive-latex-extra
+      - name: Render PDF
+        run: pdflatex cv.tex
+      - name: Upload CV to Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: CV
+          path: ./cv.pdf
