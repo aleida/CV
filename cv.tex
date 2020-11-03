@@ -1,210 +1,146 @@
-\documentclass[11pt,a4paper,oneside]{moderncv}
+\documentclass[11pt,a4paper,oneside,colorlinks]{moderncv}
 
 \usepackage[utf8]{inputenc}
-%\usepackage[T2A]{fontenc}
-%\usepackage[unicode]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[unicode]{hyperref}
 \usepackage{vmargin}
+\usepackage{xcolor}
 
 \setmarg{15mm}{10mm}{175mm}{257mm}
-\moderncvtheme[blue]{oldstyle}
+\moderncvtheme[burgundy]{oldstyle}
+\definecolor{urlcolor}{HTML}{013766}
+\hypersetup{breaklinks,urlcolor=urlcolor,linkcolor=urlcolor}
 
-\firstname{Vadym}
-\lastname{Zakovinko}
-\address{}{Kyiv, Ukraine}
-\mobile{+380 (66) 731-7776}
-\email{vadym@zakovinko.com}
-\homepage{zakovinko.com}
-\social[github]{Quard}
-\social[skype]{quardz}
-\social[linkedin]{vadymzakovinko}
-\photo[64pt][0pt]{photo}
+\firstname{Maria}
+\familyname{Yakimova}
+\address{}{Kiev, Ukraine}
+\mobile{(050) 965-47-79}
+\email{maria.yakimova.dev@gmail.com}
+\social[skype]{aylirne}
+\social[linkedin]{yakimova}
+\photo[64pt][0pt]{photo.jpg}
+
 
 \makeatletter
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\renewcommand{\labelitemi}{\scriptsize\color{blue}{$\circ$}}
 \makeatother
 
 \begin{document}
     \maketitle
 
-    \section{Skills}
-        \subsection{Development}
-            \cvline
-                {Language}{Python, Go, JavaScript}
-            \cvline
-                {Database}{PostgreSQL, Redis, MongoDB, Bolt}
-            \cvline
-                {Versions control system}{Git, Mercurial}
-            \cvline
-                {Frameworks and tools}{Django, AsyncIO, AioHttp, Flask, Google Protobuf, gRPC, Django Rest Framework, Pylons, SQLAlchemy, Celery, ElasticSearch, Apache Beam, Pytest, UnitTest}
-            \cvline
-                {Deployment/Platform}{Docker, Kubernetes, AWS Lambda, Google Could Platform, Terraform, Circle CI, GitHub Actions}
-            \cvline
-                {Web-frontend}{HTML, CSS, SASS, Less, jQuery, AngularJS, Backbone, React}
-
-        \subsection{Computer}
-            \cvline
-                {Operation Systems}{Mac OS X, Linux}
-
     \section{Publications}
-        \cvlistitem
-            {\href{https://djangostars.com/blog/my-story-with-golang/}{My Story with Go, Python, and Benchmarks}}
-        \cvlistitem
-            {\href{https://medium.com/free-code-camp/django-performance-optimization-looking-for-the-bottlenecks-8583789e341b}{Django Performance Optimization: The Search for Bottlenecks}}
-        \cvlistitem
-            {\href{https://codeburst.io/how-i-use-python-debugger-to-fix-code-279f11f75866}{How I Use Python Debugger to Fix Code}}
-        \cvlistitem
-            {\href{https://codeburst.io/the-celery-python-guide-basics-examples-and-useful-tips-d8da1fcfaea3}{The Celery Python Guide: Basics, Examples and Useful Tips}}
-        \cvlistitem
-            {\href{https://djangostars.com/blog/how-to-build-your-own-blockchain-for-a-financial-product/}{How to build your own blockchain for a financial product}}
-        \cvlistitem
-            {\href{https://medium.com/free-code-camp/django-classifier-or-what-have-i-done-4a8164358c09}{Django-Classifier or What Have I Done?}}
-
-
-    \section{Professional experience}
-
-        \cventry
-            {2019.12~---~for now}
-            {team lead/architect}
-            {\href{http://vetintegrations.com/}{VIS}}
-            {}{}
-            {
-                \begin{itemize}
-                  \item analysis and processing business requirements
-                  \item choice of proper tools and technologies
-                  \item design of system
-                  \item using cloud solutions available in Google Cloud Platform and deploy application using Kubernetes cluster (GKE)
-                  \item involment into working closelly with lower on GDPR and CCPA requirements for project
-                  \item building processes and team
-                \end{itemize}
+        \subsection{\href{https://medium.freecodecamp.org/a-guide-to-asynchronous-programming-in-python-with-asyncio-232e2afa44f6}{A guide to asynchronous programming in Python with asyncio}}
+            \cvline{References}{
+                \newline{}
+                \cvlistitem{\href{https://twitter.com/raymondh/status/859432294439727104}{Raymond Hettinger (python core developer)}}
+                \cvlistitem{\href{https://news.ycombinator.com/}{Hacker News}}
+                \cvlistitem{\href{https://dzone.com/articles/when-to-use-and-not-to-use-asynchronous-programmin}{DevOps Zone}}
+                \cvlistitem{\href{https://stackify.com/when-to-use-asynchronous-programming/\#Yakimova}{Stackify}}
             }
 
+        \subsection{\href{https://djangostars.com/blog/list-comprehensions-and-generator-expressions/}{List Comprehensions and Generator Expressions}}
+
+    \section{Professional expirience}
         \cventry
-            {2016.03~---~2019.10}
+            {2020.01~---~now}
+            {technical lead}
+            {\href{https://www.epam.com/}{EPAM}}
+            {}{}
+            {
+              Technical head of a team of 6 persons. Responsible for architecture and technical decisions, code review.
+              Fully involved in communication with customer from technical side and from business side as well. \\
+              \textit{technologies:} Python, Tornado, Docker, Kubernates, AWS services (EC2, S3, Aurora, EKS, CloudWatch, ECR, Cognito), JupyterHub/JupyterNotebook
+            }
+        \cventry
+            {2019.04~---~2019.09}
             {solution architect}
             {\href{http://djangostars.com}{Django Stars}}
             {}{}
-            {
-              main responsibilities:
-              \begin{itemize}
-                \item create architecture for new projects
-                \item consulting teams with a technical question
-                \item support project-teams in negotiation with a customer
-                \item working on pre-development project phases
-                \item investigation of new technologies
-                \item build process of hiring new employees
-                \item working on education course for QA automation for manual QA
-              \end{itemize}
-            }
-
+            {}
         \cventry
-            {2015.03~---~2016.03}
-            {team lead/python developer}
+            {2016.03~---~2019.04}
+            {team lead/back-end developer}
             {\href{http://djangostars.com}{Django Stars}}
             {}{}
             {
-              outsource company based in Ukraine:\newline
-              MoneyPark is Switzerland's first independent provider for personalized financial advice that's worth its money. Company support and consult clients on mortgages, retirement, insurance and investment products. \url{http://moneypark.ch/}\newline
-              main responsibilities:
-              \begin{itemize}
-                \item optimization for rates calculation
-                \item create subsystem for fully customizable discounts
-                \item migrate project from python 2 to python 3
-                \item constantly update version of using framework
-              \end{itemize}
+               I lead a team of 9 specialists, am responsible for architecture, pull requests review,
+               tasks distribution, communication with customers: discuss business logics, possible issues and edge cases.
             }
-
         \cventry
-            {2013.10~---~2015.03}
-            {python developer}
+            {2013.03~---~2016.03}
+            {back-end developer}
             {\href{http://djangostars.com}{Django Stars}}
             {}{}
             {
-              outsource company based in Ukraine:\newline
-              MoneyPark ~--~ Platform for select best offer of either mortgage or insurance or investments. With support of different analyzers, documents storage, discounts and etc. \url{http://moneypark.ch/}
+              Django Stars is a team of star geeks with expertise in custom web application development with Python / Django, mobile and facebook apps development,
+              geospatial systems (GIS), UI/UX and consulting. We are a company registered in the US with a representative office in Kiev, Ukraine.\newline{}
+              \textit{technologies:} python, django, asyncio, postgres, redis, celery, backbone, angular 1.x, reactjs
             }
-
         \cventry
-            {2012.12~---~2013.10}
-            {python developer}
-            {\href{https://wargaming.com/}{Wargaming (Persha Studia)}}
-            {}{}
-            {
-              Working on public API for ``World of Tanks'' and ``World of Warplanes''
-            }
-
-        \cventry
-            {2011.05~--–~2012.12}
-            {python developer}
+            {2012.06~---~2012.12}
+            {python/pylons developer}
             {\href{https://prom.ua/}{Prom.UA}}
             {}{}
             {
-              Platform for build own online shop. Provides a cheap way to create online store for your business with support of cart, discounts, personal design. Based in Ukraine and has affiliates in more then 10 countries. \url{http://prom.ua/} \url{http://tiu.ru/}\newline
-              main responsibilities:
-              \begin{itemize}
-                \item support team, working on urgent fixes for production
-                \item discount subsystem for products
-                \item creating different ranks for promotion actions
-              \end{itemize}
+              eCommerce platform for small and medium businesses. \href{http://prom.ua/}{prom.ua} (launched in 14
+              countries, \href{http://tiu.ru/}{tiu.ru} \href{http://deal.by/}{deal.by} \href{http://satu.kz/}{satu.kz})\newline{}
+              \textit{technologies:} python, pylons, postgresql, sqlalchemy, celery, solr, redis, coffeescript, spine, sass
             }
-
         \cventry
-            {2011.04~--–~2012.06}
-            {lead python developer}
-            {ActiveGift}
-            {}{}
-            {
-              Web-site where you can create chat room and invite your friends from facebook for discussing gift for someone. Gifts can be added by search in amazon store or by url to site or just as text description. People in chat room can vote for gifts and discuss each one.
-            }
-
-        \cventry
-            {2010.06~--–~2012.06}
-            {python/django developer}
-            {Bitpapaya}
-            {}{}
-            {
-                Development of eCommerce projects, booking sites, web projects optimization and deployment. \url{http://bitpapaya.com/}
-            }
-
-        \cventry
-            {2010.09~--–~2011.06}
-            {python/django developer}
-            {42 Coffee Cups}
-            {}{}
-            {
-                Outsource development of online stores, booking sites and services. \url{http://42coffeecups.com/}
-            }
-
-        \cventry
-            {2009.04~--–~2010.08}
-            {python/django developer}
-            {Avtocentre}
-            {}{}
-            {
-                One of biggest catalog used vehicles in Ukraine. \url{http://avtobazar.ua/}
-            }
-
-        \cventry
-            {2007.11~--–~2009.03}
-            {php/adobe flex developer}
-            {Finport Technologiens, Inc.}
-            {}{}
-            {
-                Development of web-oriented patent search internal systems with PHP, Adobe Flex and WebOrb.
-            }
+            {2009~---~2010}
+            {web-designer}
+            {freelance}
+            {}{}{}
 
     \section{Education}
         \cventry
-            {2008}
-            {Masters degree}
-            {Software Development of Automated systems}
-            {Institute of Artificial Intelligence Problems, Donetsk, Ukraine}
+            {2020}
+            {EPAM}{}
+            {Solution Architect School}
+            {}{}
+        \cventry
+            {2011~---~2013}
+            {Master Degree}
+            {Computer Science}
+            {Faculty of Cybernetics of Taras Shevchenko National University of Kyiv}
+            {}{}
+        \cventry
+            {2007~---~2011}
+            {Bachelor Diploma with Honors}
+            {Computer Science}
+            {Faculty of Cybernetics of Taras Shevchenko National University of Kyiv}
+            {}{}
+        \cventry
+            {2004~---~2007}
+            {High School}{}
+            {Ukrainian Physics and Mathematics Lyceum of Kiev Taras Shevchenko University}
             {}{}
 
-        \cventry
-            {2005}
-            {Specialist degree}
-            {Software Development of Automated systems}
-            {College of Kyiv National Economic University, Kiev, Ukraine}
-            {}{}
+    \section{Languages}
+        \cvline
+            {Native}{Ukrainian, Russian}
+        \cvline
+            {Upper intermediate}{English, German}
+
+    \section{Skills}
+        \subsection{Development}
+            \cvline
+                {Programm languages}{Python, JavaScript, C/C++/Lisp (at university)}
+            \cvline
+                {Databases}{PostgreSQL, SQLite, Redis}
+            \cvline
+                {Web-frontend}{HTML, AngularJS 1.x, React}
+            \cvline
+                {Version Control Systems}{Git}
+            \cvline
+                {Frameworks and tools}{Django, AsyncIO, Django REST Framework, Celery, Regular expressions}
+        \subsection{Social}
+            \cvline
+                {}{responsibility, hard-working, eager to learn new things}
+
+    \section{Interests}
+        \cvline
+            {}{photography, travelling, swiming, basketball, ping-pong, motorcycles}
 
 \end{document}
